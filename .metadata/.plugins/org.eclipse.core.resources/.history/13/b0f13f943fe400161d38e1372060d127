@@ -1,0 +1,15 @@
+
+public class Aipattern {
+	private String record;
+	public Aipattern() {
+		record = "";
+	}
+	private void setInput(String input) {
+		
+
+	}
+	private String[] analyze(String input) {
+		String[] parts = input.split(" ");;
+		return parts;
+	}
+}

@@ -1,0 +1,23 @@
+
+public class Aipattern {
+	private String input;
+	private String record;
+	public Aipattern() {
+		record = "";
+	}
+	private void setInput(String input) {
+		String[] order = analyze(input);
+		if(order[0].equals("Hello")){
+			record = "Hello, my user";
+		}
+
+	}
+	private String[] analyze(String input) {
+		String[] parts = input.split(" ");;
+		return parts;
+	}
+	private String getRespond() {
+		return record;
+
+	}
+}
