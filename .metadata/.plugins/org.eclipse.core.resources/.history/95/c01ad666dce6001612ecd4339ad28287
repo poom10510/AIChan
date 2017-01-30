@@ -1,0 +1,37 @@
+
+public class Aiorder {
+	private String result;
+	private int value;
+	public Aiorder() {
+		result = "";
+		value = 0;
+	}
+	public void setResult(String[] input) {
+		String[] order = input;
+		if(order[0].equalsIgnoreCase("hello")){
+			this.result = "Hello, my user";
+		}
+		else if(order[0].equalsIgnoreCase("set")){
+			try {
+				value= Integer.parseInt(order[1]);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			this.result = ""+value;
+		}
+		else if(order[0].equalsIgnoreCase("plus")){
+			for(int i =1; i<order.length;i++){
+				try {
+					value += Integer.parseInt(order[1]);
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+			}
+			this.result = ""+value;
+		}
+		
+	}
+	public String getResult() {
+		return result;
+	}
+}

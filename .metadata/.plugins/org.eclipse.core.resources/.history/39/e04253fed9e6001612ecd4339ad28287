@@ -1,0 +1,16 @@
+
+public class Aiorder {
+	private String result;
+	private int value;
+	public Aiorder() {
+		result = "";
+		value = 0;
+	}
+	public void setResult(String[] input) {
+		String[] order = analyze(input);
+		if(order[0].equalsIgnoreCase("hello")){
+			this.result = "";
+		}
+		
+	}
+}

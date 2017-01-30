@@ -16,7 +16,7 @@ public class Aipattern {
 		return parts;
 	}
 	public String getRespond() {
-		return aiorder.getResult();
+		return record;
 
 	}
 }

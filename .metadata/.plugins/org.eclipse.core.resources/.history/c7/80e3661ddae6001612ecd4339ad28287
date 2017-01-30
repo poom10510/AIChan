@@ -8,7 +8,9 @@ public class Aipattern {
 	}
 	public void setInput(String input) {
 		String[] order = analyze(input);
-		aiorder.setResult(order);
+		if(order[0].equalsIgnoreCase("hello")){
+			record = "Hello, my user";
+		}
 
 	}
 	private String[] analyze(String input) {
@@ -16,7 +18,7 @@ public class Aipattern {
 		return parts;
 	}
 	public String getRespond() {
-		return aiorder.getResult();
+		return record;
 
 	}
 }
