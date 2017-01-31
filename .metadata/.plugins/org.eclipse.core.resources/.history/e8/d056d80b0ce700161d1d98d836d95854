@@ -8,12 +8,10 @@ public class Aiinteface {
 		String part2 = parts[1];
 		System.out.println(part1+"==="+part2);*/
 		Aipattern ai = new Aipattern();
-		String input = "";
-		while(!input.equalsIgnoreCase("end")){
-			System.out.print("Please say : ");
-			input = scanner.nextLine();
-			ai.setInput(input);
-			System.out.println(ai.getRespond());
-		}
+		
+		System.out.print("Hello, please say : ");
+		String input = scanner.nextLine();
+		ai.setInput(input);
+		System.out.println(ai.getRespond());
 	}
 }

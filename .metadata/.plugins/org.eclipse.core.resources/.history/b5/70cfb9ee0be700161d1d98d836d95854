@@ -9,7 +9,7 @@ public class Aiorder {
 	public void setResult(String[] input) {
 		String[] order = input;
 		if(order[0].equalsIgnoreCase("hello")){
-			this.result = "Hello, my user.";
+			this.result = "Hello, my user";
 		}
 		else if(order[0].equalsIgnoreCase("set")||order[0].equalsIgnoreCase("=")){
 			try {
@@ -64,7 +64,7 @@ public class Aiorder {
 			this.result = ""+value;
 		}
 		else if(order[0].equalsIgnoreCase("end")){
-			this.result = "Good Bye, my user.";
+			
 		}
 		else{
 			this.result = "Please say again.";

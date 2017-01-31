@@ -10,7 +10,7 @@ public class Aiinteface {
 		Aipattern ai = new Aipattern();
 		String input = "";
 		while(!input.equalsIgnoreCase("end")){
-			System.out.print("Please say : ");
+			System.out.print("Hello, please say : ");
 			input = scanner.nextLine();
 			ai.setInput(input);
 			System.out.println(ai.getRespond());
