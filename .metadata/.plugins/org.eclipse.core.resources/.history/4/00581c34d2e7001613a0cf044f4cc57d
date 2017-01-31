@@ -16,7 +16,7 @@ public class Aiorder {
 			}
 			else if(order[0].equalsIgnoreCase("cal")){
 				st.setStatus('c');
-				this.result = "I will open calculator, my user.";
+				this.result = "Good Bye, my user.";
 			}
 			else if(order[0].equalsIgnoreCase("end")){
 				this.result = "Good Bye, my user.";
@@ -77,9 +77,6 @@ public class Aiorder {
 					}
 				}
 				this.result = ""+value;
-			}
-			else if(order[0].equalsIgnoreCase("cancel")){
-				this.result = "I will close calculator, my user.";
 			}
 			else if(order[0].equalsIgnoreCase("end")){
 				this.result = "Good Bye, my user.";

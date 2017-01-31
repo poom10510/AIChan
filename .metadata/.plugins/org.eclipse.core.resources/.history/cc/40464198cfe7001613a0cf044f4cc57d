@@ -5,7 +5,7 @@ public class Aistatus {
 	private Aistatus() {
 		status = Aistatelist.NORMAL;
 	}
-	public static Aistatus getInstance(){
+	public static Aistatus instance(){
 		if(ins == null){
 			ins = new Aistatus();
 		}

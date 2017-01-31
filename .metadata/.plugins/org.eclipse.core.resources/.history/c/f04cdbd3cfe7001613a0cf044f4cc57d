@@ -1,0 +1,16 @@
+
+public enum Aistatelist {
+	NORMAL("2"),
+	CALCULATOR("");
+	
+	 private String word;
+
+	 Aistatelist(String word) {
+	        this.word = word;
+	    }
+	 
+	 public String toString(){
+		return word;
+		 
+	 }
+}

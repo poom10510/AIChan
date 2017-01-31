@@ -1,11 +1,11 @@
 
 public class Aistatus {
-	private static Aistatus ins;
+	private Aistatus ins;
 	private Aistatelist status;
 	private Aistatus() {
 		status = Aistatelist.NORMAL;
 	}
-	public static Aistatus getInstance(){
+	public Aistatus instance(){
 		if(ins == null){
 			ins = new Aistatus();
 		}
@@ -15,7 +15,7 @@ public class Aistatus {
 		if(status == 'n'){
 			this.status = Aistatelist.NORMAL;
 		}
-		else if(status == 'c'){
+		else if(status == 'n'){
 			this.status = Aistatelist.CALCULATOR;
 		}
 		

@@ -1,0 +1,17 @@
+
+public class Aistatus {
+	private Aistatus ins;
+	private Aistatelist status;
+	private Aistatus() {
+		status = Aistatelist.NORMAL;
+	}
+	public Aistatus instance(){
+		if(ins == null){
+			ins = new Aistatus();
+		}
+		return ins;
+	}
+	public Aistatelist getStatus(){
+		return status;
+	}
+}

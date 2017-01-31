@@ -1,11 +1,11 @@
 
 public class Aistatus {
-	private static Aistatus ins;
+	private Aistatus ins;
 	private Aistatelist status;
 	private Aistatus() {
 		status = Aistatelist.NORMAL;
 	}
-	public static Aistatus getInstance(){
+	public Aistatus instance(){
 		if(ins == null){
 			ins = new Aistatus();
 		}
