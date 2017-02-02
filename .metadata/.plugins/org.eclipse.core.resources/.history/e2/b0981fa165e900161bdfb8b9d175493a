@@ -1,0 +1,12 @@
+package Aicommand;
+
+public abstract class Aicommand {
+	private Aistatelist state;
+	private String key;
+	
+	public abstract String Active();
+	public Aistatelist getState(){
+		return state;
+	}
+	
+}

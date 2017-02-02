@@ -1,3 +1,4 @@
+import Aicommand.Aistatelist;
 
 public class Aistatus {
 	private static Aistatus ins;

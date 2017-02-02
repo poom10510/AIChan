@@ -1,0 +1,9 @@
+import Aicommand.Aicommand;
+import Aicommand.Aicommandcalculator;
+
+public class Aicommandlist {
+	private Aicommand[] command = {new Aicommandcalculator(),
+	           						new Aicommandcalculator()};
+	public Aicommandlist(){
+	}
+}
