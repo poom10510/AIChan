@@ -25,8 +25,8 @@ public class Aistatus {
 		}
 		
 	}
-	public boolean changeCommand(String input){
-		return this.command.checkKey(input);
+	public void changeCommand(String[] input){
+		this.command.checkKey(input[0]);
 	}
 	public Aicommandlist getCommand() {
 		return command;

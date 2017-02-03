@@ -15,8 +15,5 @@ public abstract class Aicommand {
 	public String getKey() {
 		return key;
 	}
-	public String getGreeting() {
-		return greeting;
-	}
 	
 }

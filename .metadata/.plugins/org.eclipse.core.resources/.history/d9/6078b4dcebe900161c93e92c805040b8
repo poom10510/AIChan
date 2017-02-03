@@ -2,11 +2,10 @@ package Aicommand;
 
 public abstract class Aicommand {
 	private Aistatelist state;
-	private String key,greeting;
-	public Aicommand(Aistatelist state,String key,String greeting) {
+	private String key;
+	public Aicommand(Aistatelist state,String key) {
 		this.state = state;
 		this.key = key;
-		this.greeting = greeting;
 	}
 	public abstract String Active(String[] input );
 	public Aistatelist getState(){
@@ -14,9 +13,6 @@ public abstract class Aicommand {
 	}
 	public String getKey() {
 		return key;
-	}
-	public String getGreeting() {
-		return greeting;
 	}
 	
 }

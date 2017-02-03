@@ -3,7 +3,7 @@ package Aicommand;
 public class Aicommandcalculator extends Aicommand{
 	private double value;
 	public Aicommandcalculator() {
-		super(Aistatelist.CALCULATOR,"cal", "Calculator");
+		super(Aistatelist.CALCULATOR,"cal");
 	}
 	@Override
 	public String Active(String[] input) {
