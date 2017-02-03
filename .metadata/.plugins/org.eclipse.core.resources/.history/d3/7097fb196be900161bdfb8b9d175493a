@@ -1,0 +1,16 @@
+package Aicommand;
+
+public class Aicommandlistnormal extends Aicommand{
+
+	public Aicommandlistnormal(Aistatelist state, String key) {
+		super(state, key);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String Active(String[] input) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

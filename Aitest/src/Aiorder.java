@@ -11,12 +11,13 @@ public class Aiorder {
 	public void setResult(String[] input) {
 		String[] order = input;
 		if(st.getStatus().getNumber()==0){
-			if(order[0].equalsIgnoreCase("hello")){
-				this.result = "Hello, my user.";
-			}
-			else if(order[0].equalsIgnoreCase("cal")){
+			
+			if(order[0].equalsIgnoreCase("cal")){
 				st.setStatus('c');
 				this.result = "I will open calculator, my user.";
+			}
+			else if(order[0].equalsIgnoreCase("hello")){
+				this.result = "Hello, my user.";
 			}
 			else if(order[0].equalsIgnoreCase("end")){
 				this.result = "Good Bye, my user.";
@@ -26,7 +27,7 @@ public class Aiorder {
 			}
 		}
 		else if(st.getStatus().getNumber()==1 ){
-			if(order[0].equalsIgnoreCase("set")||order[0].equalsIgnoreCase("=")){
+			/*if(order[0].equalsIgnoreCase("set")||order[0].equalsIgnoreCase("=")){
 				try {
 					value = Double.parseDouble(order[1]);
 				} catch (Exception e) {
@@ -77,15 +78,17 @@ public class Aiorder {
 					}
 				}
 				this.result = ""+value;
-			}
-			else if(order[0].equalsIgnoreCase("cancel")){
+			}*/
+			
+			 if(order[0].equalsIgnoreCase("cancel")){
+				st.setStatus('n');
 				this.result = "I will close calculator, my user.";
 			}
 			else if(order[0].equalsIgnoreCase("end")){
 				this.result = "Good Bye, my user.";
 			}
 			else{
-				this.result = "Please say again.";
+				this.result = st.getCommand().getNowcommand().Active(order);
 			}
 		}
 		

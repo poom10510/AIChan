@@ -11,5 +11,8 @@ public abstract class Aicommand {
 	public Aistatelist getState(){
 		return state;
 	}
+	public String getKey() {
+		return key;
+	}
 	
 }

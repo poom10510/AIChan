@@ -1,0 +1,12 @@
+import Aicommand.Aicommand;
+import Aicommand.Aicommandcalculator;
+import Aicommand.Aicommandlistnormal;
+
+public class Aicommandlist {
+	private Aicommand[] command;
+	public Aicommandlist(){
+		Aicommand[] command = {new Aicommandlistnormal(),
+					new Aicommandcalculator()};
+		this.command = command;
+	}
+}

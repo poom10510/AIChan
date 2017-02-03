@@ -1,0 +1,27 @@
+import Aicommand.Aistatelist;
+
+public class Aistatus {
+	private static Aistatus ins;
+	private Aistatelist status;
+	private Aistatus() {
+		status = Aistatelist.NORMAL;
+	}
+	public static Aistatus getInstance(){
+		if(ins == null){
+			ins = new Aistatus();
+		}
+		return ins;
+	}
+	public void setStatus(char status) {
+		if(status == 'n'){
+			this.status = Aistatelist.NORMAL;
+		}
+		else if(status == 'c'){
+			this.status = Aistatelist.CALCULATOR;
+		}
+		
+	}
+	public Aistatelist getStatus(){
+		return status;
+	}
+}

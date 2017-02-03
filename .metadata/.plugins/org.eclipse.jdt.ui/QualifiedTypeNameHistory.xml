@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="Aipattern"/>
 <fullyQualifiedTypeName name="Aiorder"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
@@ -10,4 +9,9 @@
 <fullyQualifiedTypeName name="javax.management.InstanceAlreadyExistsException"/>
 <fullyQualifiedTypeName name="Aistatelist"/>
 <fullyQualifiedTypeName name="Aistatus"/>
+<fullyQualifiedTypeName name="Aicommand.Aistatelist"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="Aicommand.Aicommand"/>
+<fullyQualifiedTypeName name="Aicommandlist"/>
+<fullyQualifiedTypeName name="Aicommand.Aicommandcalculator"/>
 </qualifiedTypeNameHistroy>

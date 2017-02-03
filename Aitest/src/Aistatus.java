@@ -3,8 +3,10 @@ import Aicommand.Aistatelist;
 public class Aistatus {
 	private static Aistatus ins;
 	private Aistatelist status;
+	private Aicommandlist command;
 	private Aistatus() {
 		status = Aistatelist.NORMAL;
+		command = new Aicommandlist();
 	}
 	public static Aistatus getInstance(){
 		if(ins == null){
@@ -15,13 +17,19 @@ public class Aistatus {
 	public void setStatus(char status) {
 		if(status == 'n'){
 			this.status = Aistatelist.NORMAL;
+			this.command.setNowcommand(this.status.getNumber());
 		}
 		else if(status == 'c'){
 			this.status = Aistatelist.CALCULATOR;
+			this.command.setNowcommand(this.status.getNumber());
 		}
 		
 	}
+	public Aicommandlist getCommand() {
+		return command;
+	}
 	public Aistatelist getStatus(){
-		return status;
+		//return status;
+		return this.command.getNowcommand().getState();
 	}
 }

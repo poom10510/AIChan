@@ -1,0 +1,67 @@
+package Aicommand;
+
+public class Aicommandcalculator extends Aicommand{
+	private double value;
+}
+	public Aicommandcalculator() {
+		super(Aistatelist.CALCULATOR,"cal");
+	}
+	@Override
+	public String Active(String[] input) {
+		String result ="";
+		if(input[0].equalsIgnoreCase("set")||input[0].equalsIgnoreCase("=")){
+			try {
+				value = Double.parseDouble(input[1]);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			result = ""+value;
+		}
+		else if(input[0].equalsIgnoreCase("plus")||input[0].equalsIgnoreCase("+")){
+			for(int i =1; i<input.length;i++){
+				try {
+					value += Double.parseDouble(input[i]);
+					//System.out.println(value);
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+			}
+			result = ""+value;
+		}
+		else if(input[0].equalsIgnoreCase("minus")||input[0].equalsIgnoreCase("-")){
+			for(int i =1; i<input.length;i++){
+				try {
+					value -= Double.parseDouble(input[i]);
+					//System.out.println(value);
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+			}
+			result = ""+value;
+		}
+		else if(input[0].equalsIgnoreCase("multi")||input[0].equalsIgnoreCase("*")){
+			for(int i =1; i<input.length;i++){
+				try {
+					value *= Double.parseDouble(input[i]);
+					//System.out.println(value);
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+			}
+			result = ""+value;
+		}
+		else if(input[0].equalsIgnoreCase("divide")||input[0].equalsIgnoreCase("/")){
+			for(int i =1; i<input.length;i++){
+				try {
+					value /= Double.parseDouble(input[i]);
+					//System.out.println(value);
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+			}
+			result = ""+value;
+			return result;
+		}
+	}
+
+}
