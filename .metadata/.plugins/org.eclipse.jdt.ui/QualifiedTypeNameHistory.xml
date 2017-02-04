@@ -12,6 +12,7 @@
 <fullyQualifiedTypeName name="Aicommand.Aistatelist"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="Aicommand.Aicommand"/>
-<fullyQualifiedTypeName name="Aicommandlist"/>
 <fullyQualifiedTypeName name="Aicommand.Aicommandcalculator"/>
+<fullyQualifiedTypeName name="Aicommand.Aicommandlistnormal"/>
+<fullyQualifiedTypeName name="Aicommandlist"/>
 </qualifiedTypeNameHistroy>

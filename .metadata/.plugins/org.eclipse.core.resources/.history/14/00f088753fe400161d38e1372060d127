@@ -1,7 +1,0 @@
-
-public class Aipattern {
-	private String record;
-	public Aipattern() {
-		record = "";
-	}
-}

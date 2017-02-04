@@ -2,10 +2,10 @@ import Aicommand.Aistatelist;
 
 public class Aistatus {
 	private static Aistatus ins;
-	//private Aistatelist status;
+	private Aistatelist status;
 	private Aicommandlist command;
 	private Aistatus() {
-		//status = Aistatelist.NORMAL;
+		status = Aistatelist.NORMAL;
 		command = new Aicommandlist();
 	}
 	public static Aistatus getInstance(){
@@ -14,7 +14,7 @@ public class Aistatus {
 		}
 		return ins;
 	}
-	/*public void setStatus(char status) {
+	public void setStatus(char status) {
 		if(status == 'n'){
 			this.status = Aistatelist.NORMAL;
 			this.command.setNowcommand(this.status.getNumber());
@@ -24,7 +24,7 @@ public class Aistatus {
 			this.command.setNowcommand(this.status.getNumber());
 		}
 		
-	}*/
+	}
 	public boolean changeCommand(String input){
 		return this.command.checkKey(input);
 	}

@@ -2,10 +2,10 @@ import Aicommand.Aistatelist;
 
 public class Aistatus {
 	private static Aistatus ins;
-	//private Aistatelist status;
+	private Aistatelist status;
 	private Aicommandlist command;
 	private Aistatus() {
-		//status = Aistatelist.NORMAL;
+		status = Aistatelist.NORMAL;
 		command = new Aicommandlist();
 	}
 	public static Aistatus getInstance(){
