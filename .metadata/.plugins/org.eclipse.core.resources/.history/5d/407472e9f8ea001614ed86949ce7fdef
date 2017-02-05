@@ -23,12 +23,12 @@ public class Aicommandschedule extends Aicommand{
 	public String Active(String[] input) {
 		this.result ="";
 		if(input[0].equalsIgnoreCase("view")){
-			if(list.size()==0){
+			if(list.length==0){
 				result = "No schedule.";
 			}
 			else{
-				for (int i = 0; i < list.size(); i++) {
-					result += i+1+". "+list.get(i)+"\n";
+				for (int i = 0; i < list.length; i++) {
+					result += list[i]+"\n";
 				}
 			}
 				

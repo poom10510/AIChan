@@ -1,0 +1,16 @@
+package Aicommand;
+
+public class Aicommandschedule extends Aicommand{
+	private String a;
+	public Aicommandschedule() {
+		super(Aistatelist.SCHEDULE,"sch", "Schedule");
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String Active(String[] input) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

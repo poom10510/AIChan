@@ -2,15 +2,13 @@ package Aicommand;
 
 public class Aicommandcalculator extends Aicommand{
 	private double value;
-	private String result;
 	public Aicommandcalculator() {
 		super(Aistatelist.CALCULATOR,"cal", "Calculator");
 		this.value = 0;
-		this.result ="";
 	}
 	@Override
 	public String Active(String[] input) {
-		this.result ="";
+		String result ="";
 		if(input[0].equalsIgnoreCase("set")||input[0].equalsIgnoreCase("=")){
 			try {
 				value = Double.parseDouble(input[1]);
@@ -63,7 +61,7 @@ public class Aicommandcalculator extends Aicommand{
 			}
 		}
 			result = ""+value;
-			return this.result;
+			return result;
 		}
 
 }

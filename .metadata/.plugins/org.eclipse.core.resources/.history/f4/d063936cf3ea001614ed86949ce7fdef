@@ -2,8 +2,7 @@ package Aicommand;
 
 public enum Aistatelist {
 	NORMAL(0),
-	CALCULATOR(1),
-	SCHEDULE(2);
+	CALCULATOR(1);
 	
 	 private int num;
 

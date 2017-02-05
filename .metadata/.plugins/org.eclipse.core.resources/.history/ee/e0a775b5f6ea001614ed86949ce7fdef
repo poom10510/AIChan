@@ -10,7 +10,7 @@ public class Aicommandcalculator extends Aicommand{
 	}
 	@Override
 	public String Active(String[] input) {
-		this.result ="";
+		
 		if(input[0].equalsIgnoreCase("set")||input[0].equalsIgnoreCase("=")){
 			try {
 				value = Double.parseDouble(input[1]);

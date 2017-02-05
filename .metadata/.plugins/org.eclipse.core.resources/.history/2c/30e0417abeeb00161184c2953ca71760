@@ -28,7 +28,7 @@ public class Aicommandschedule extends Aicommand{
 			}
 			else{
 				for (int i = 0; i < list.size(); i++) {
-					result += i+1+". "+list.get(i)+"\n";
+					result += list.get(i)+"\n";
 				}
 			}
 				

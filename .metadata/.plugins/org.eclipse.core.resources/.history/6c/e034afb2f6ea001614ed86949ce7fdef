@@ -1,0 +1,21 @@
+package Aicommand;
+
+public class Aicommandschedule extends Aicommand{
+	private String[] list;
+	private String result;
+	public Aicommandschedule() {
+		super(Aistatelist.SCHEDULE,"sch", "Schedule");
+		String[] list = {"sleep",
+						 "eat",
+						 "play game"};
+		this.list =list;
+		this.result ="";
+	}
+
+	@Override
+	public String Active(String[] input) {
+		// TODO Auto-generated method stub
+		return this.result;
+	}
+
+}

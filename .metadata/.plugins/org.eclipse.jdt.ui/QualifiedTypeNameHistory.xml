@@ -15,4 +15,7 @@
 <fullyQualifiedTypeName name="Aicommand.Aicommandcalculator"/>
 <fullyQualifiedTypeName name="Aicommand.Aicommandlistnormal"/>
 <fullyQualifiedTypeName name="Aicommandlist"/>
+<fullyQualifiedTypeName name="Aicommand.Aicommandschedule"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
